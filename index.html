@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>My Website with Background Image</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            color: white; /* 设置文字颜色为白色，方便在深色背景上阅读 */
         }
         header {
-            background: #3f51b5;
+            background: rgba(63, 81, 181, 0.8); /* 半透明背景 */
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
         nav {
-            background: #303f9f;
+            background: rgba(48, 63, 159, 0.8);
             display: flex;
             justify-content: center;
             padding: 0.5rem 0;
@@ -35,7 +37,10 @@
         .hero {
             text-align: center;
             padding: 2rem 1rem;
-            background: #eceff1;
+            background: rgba(236, 239, 241, 0.8); /* 半透明的背景覆盖部分 */
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 8px;
         }
         .hero h1 {
             font-size: 2.5rem;
@@ -49,13 +54,14 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 1rem;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #333;
         }
         footer {
             text-align: center;
-            background: #3f51b5;
+            background: rgba(63, 81, 181, 0.8);
             color: white;
             padding: 1rem 0;
             margin-top: 2rem;
@@ -78,16 +84,15 @@
     <section class="content">
         <h2>About This Page</h2>
         <p>
-            This page is created to demonstrate a clean and responsive layout. 
-            You can modify the content and style as you like. 
-            It's a great starting point for your GitHub Pages project!
+            This page demonstrates how to use a background image effectively. 
+            You can modify the content and styles as you like. 
         </p>
         <p>
-            The design uses a mix of colors and spacing to make it visually appealing while keeping the code lightweight.
+            The semi-transparent sections make text easy to read against a busy background image.
         </p>
     </section>
     <footer>
-        <p>© 2024 My Simple Website | Built with HTML & CSS</p>
+        <p>© 2024 My Website | Built with HTML & CSS</p>
     </footer>
 </body>
 </html>
