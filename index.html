@@ -3,68 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website with Audio</title>
+    <title>My Beautiful Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
-            background-size: cover;
+            font-family: Arial, sans-serif;
             color: white;
+            text-align: center;
+            background-image: url('src="/chinese/images/header_faculties.png?20150828"'); /* 替换为你的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         header {
-            background: rgba(63, 81, 181, 0.8);
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
         }
-        nav {
-            background: rgba(48, 63, 159, 0.8);
-            display: flex;
-            justify-content: center;
-            padding: 0.5rem 0;
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.1rem;
+        main {
+            padding: 20px;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .hero {
-            text-align: center;
-            padding: 2rem 1rem;
-            background: rgba(236, 239, 241, 0.8);
-            margin: 2rem auto;
+        .video-container {
+            margin: 20px auto;
             max-width: 800px;
-            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 10px;
         }
-        .content {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            color: #333;
+        video {
+            width: 100%;
+            border-radius: 10px;
         }
         footer {
-            text-align: center;
-            background: rgba(63, 81, 181, 0.8);
-            color: white;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        .audio-container {
-            text-align: center;
-            margin: 2rem 0;
-        }
-        .audio-container p {
-            font-size: 1.2rem;
-            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -72,33 +51,17 @@
     <header>
         <h1>Welcome to My Website</h1>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section class="hero">
-        <h1>Hello, World!</h1>
-        <p>This is a simple and elegant webpage designed with HTML and CSS.</p>
-    </section>
-    <section class="content">
-        <h2>About This Page</h2>
-        <p>
-            This page demonstrates how to use a background image and embed audio on a webpage.
-        </p>
-        <p>
-            The semi-transparent sections make text easy to read against a busy background image.
-        </p>
-    </section>
-    <section class="audio-container">
-        <p>Listen to this audio:</p>
-        <audio controls>
-            <source src="https://m804.music.126.net/20241118211635/0454ec4bd65deb3ffc5b88555cbee30c/jdyyaac/045f/5553/0e5a/35ff96b79ab93264350a900ae4656e15.m4a?authSecret=000001933f5415030e520a3b193f309c" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </section>
+    <main>
+        <div class="video-container">
+            <!-- 替换下面的视频链接为你的视频 -->
+            <video controls>
+                <source src="<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=477932522&bvid=BV1XK411r7Q7&cid=967486861&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
     <footer>
-        <p>© 2024 My Website | Built with HTML & CSS</p>
+        <p>&copy; 2024 My Website | Powered by HTML</p>
     </footer>
 </body>
 </html>
