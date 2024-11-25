@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Beautiful Website</title>
+    <title>Embedded Video Example</title>
     <style>
         body {
             margin: 0;
@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
-            background-image: url('src="/chinese/images/header_faculties.png?20150828"'); /* 替换为你的背景图片路径 */
+            background-image: url('background.jpg'); /* 替换为你的背景图片路径 */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -34,8 +34,10 @@
             border-radius: 10px;
             padding: 10px;
         }
-        video {
+        iframe {
             width: 100%;
+            height: 450px;
+            border: none;
             border-radius: 10px;
         }
         footer {
@@ -49,19 +51,23 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to My Video Page</h1>
     </header>
     <main>
         <div class="video-container">
-            <!-- 替换下面的视频链接为你的视频 -->
-            <video controls>
-                <source src="<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=477932522&bvid=BV1XK411r7Q7&cid=967486861&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <!-- 嵌入 Bilibili 视频 -->
+            <iframe 
+                src="//player.bilibili.com/player.html?isOutside=true&aid=477932522&bvid=BV1XK411r7Q7&cid=967486861&p=1" 
+                scrolling="no" 
+                border="0" 
+                frameborder="no" 
+                framespacing="0" 
+                allowfullscreen="true">
+            </iframe>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 My Website | Powered by HTML</p>
+        <p>&copy; 2024 My Video Website | Powered by HTML</p>
     </footer>
 </body>
 </html>
