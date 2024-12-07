@@ -1,68 +1,90 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta http-equiv="refresh" content="5">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Webpage Example</title>
+    <title>文生图展示页面</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            background-image: url('background.jpg'); /* 替换为你的背景图片路径 */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-color: #f8f9fa;
+            color: #333;
         }
         header {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
         }
         header h1 {
-            font-size: 2.5em;
             margin: 0;
         }
         main {
-            padding: 20px;
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .iframe-container {
-            margin: 20px auto;
-            max-width: 1000px;
-            height: 600px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            overflow: hidden;
+        h1, h2 {
+            color: #007BFF;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 10px;
+        ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #007BFF;
+            border-radius: 4px;
+        }
+        p {
+            margin: 1rem 0;
         }
         footer {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #f1f1f1;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Embedded Webpage Example</h1>
+        <h1>文生图展示页面</h1>
     </header>
     <main>
-        <div class="iframe-container">
-            <!-- 嵌入网页 -->
-            <iframe src="https://space.bilibili.com/10753463"></iframe> <!-- 替换为要嵌入的网页地址 -->
-        </div>
+        <h1>画龙点睛</h1>
+        <p>拼音：<ruby>画龙点睛<rt>huà lóng diǎn jīng</rt></ruby></p>
+
+        <h2>生成过程</h2>
+        <ul>
+            <li>理解成语含义，确定“画龙点睛”的关键意象。</li>
+            <li>设计画面，包括龙的姿态和点睛的动作。</li>
+            <li>结合传统中国风格，完成细节绘制。</li>
+            <li>生成最终图片，展示龙被点睛瞬间的活灵活现。</li>
+        </ul>
+
+        <h2>生成结果</h2>
+        <img src="A_detailed_artistic_depiction_of_the_Chinese_idiom.png" alt="画龙点睛">
+
+        <p>以上图片通过AI工具生成，展示了“画龙点睛”这一成语中点睛瞬间赋予生命的意象。</p>
     </main>
     <footer>
-        <p>&copy; 2024 My Website | Powered by HTML</p>
+        <p>© 2024 文生图展示 - 使用AI技术完成创作</p>
     </footer>
 </body>
 </html>
