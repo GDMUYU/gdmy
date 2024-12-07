@@ -1,90 +1,198 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="古道木羽的个人博客，分享生活点滴、学术与新闻传播前沿关注以及实践经历。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文生图展示页面</title>
+    <meta name="keywords" content="传播学, 博客, 数据新闻, 数字媒体, AI新闻, 个人经历, 美食旅行">
+    <title>综合展示页面 - 古道木羽的个人博客</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Noto Sans SC', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
+
+        header, nav, main, footer {
+            padding: 20px;
+        }
+
         header {
-            background-color: #007BFF;
-            color: white;
-            padding: 1rem 0;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: #fff;
             text-align: center;
+            padding: 40px 20px;
         }
+
         header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        header h2 {
+            margin: 10px 0 0;
+            font-weight: 400;
         }
-        h1, h2 {
+
+        header p {
+            margin-top: 15px;
+        }
+
+        nav {
+            background: #fff;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 0;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
             color: #007BFF;
         }
-        ul {
-            margin: 1rem 0;
-            padding-left: 1.5rem;
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 8px;
         }
-        ul li {
-            margin-bottom: 0.5rem;
+
+        section {
+            margin-bottom: 40px;
         }
-        img {
+
+        section h4 {
+            margin-top: 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        img, video {
             max-width: 100%;
-            height: auto;
-            border: 2px solid #007BFF;
-            border-radius: 4px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
         }
-        p {
-            margin: 1rem 0;
+
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
         }
+
         footer {
             text-align: center;
-            padding: 1rem 0;
-            background-color: #f1f1f1;
-            margin-top: 2rem;
-        }
-        footer p {
-            margin: 0;
+            font-size: 0.9em;
             color: #666;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer h5 {
+            margin-bottom: 10px;
+        }
+
+        footer h6 {
+            margin: 0;
+            font-weight: 400;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>文生图展示页面</h1>
+        <h1>综合展示页面 - 古道木羽的个人博客</h1>
+        <h2>学术与创意的碰撞</h2>
+        <p>欢迎来到我的个人博客，分享生活点滴与创意实践。</p>
     </header>
-    <main>
-        <h1>画龙点睛</h1>
-        <p>拼音：<ruby>画龙点睛<rt>huà lóng diǎn jīng</rt></ruby></p>
 
-        <h2>生成过程</h2>
+    <nav>
+        <h3>导航栏</h3>
         <ul>
-            <li>理解成语含义，确定“画龙点睛”的关键意象。</li>
-            <li>设计画面，包括龙的姿态和点睛的动作。</li>
-            <li>结合传统中国风格，完成细节绘制。</li>
-            <li>生成最终图片，展示龙被点睛瞬间的活灵活现。</li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#life">生活点滴</a></li>
+            <li><a href="#experience">个人经历</a></li>
+            <li><a href="#idiom">成语图展示</a></li>
+            <li><a href="#animation">成语动画展示</a></li>
+            <li><a href="#contact">联系我</a></li>
         </ul>
+    </nav>
 
-        <h2>生成结果</h2>
-        <img src="image.png" alt="画龙点睛">
+    <main>
+        <section id="about">
+            <h4>关于我</h4>
+            <p>我是中国传媒大学传播学方向的在读学生，关注<mark>新闻传播与数字媒体</mark>的结合。</p>
+        </section>
 
-        <p>以上图片通过AI工具生成，展示了“画龙点睛”这一成语中点睛瞬间赋予生命的意象。</p>
+        <section id="life">
+            <h4>生活点滴</h4>
+            <p>每天坚持学习与记录。</p>
+        </section>
+
+        <section id="experience">
+            <h4>个人经历</h4>
+            <ul>
+                <li>传播学学习与应用</li>
+                <li>数据新闻探索</li>
+            </ul>
+        </section>
+
+        <section id="idiom">
+            <h4>成语图展示</h4>
+            <p>成语：<strong class="highlight">多劳多得</strong></p>
+            <p>解释：<mark>更多的光顾麦当劳就会收获更多的麦乐鸡块。</mark></p>
+            <img src="image.png" alt="多劳多得成语展示">
+        </section>
+
+        <section id="animation">
+            <h4>成语动画展示</h4>
+            <p>多劳多得动态展示：一个小男孩拿着麦乐鸡块在麦当劳店铺前走路，手中的麦乐鸡块不断增加。</p>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </section>
+
+        <section id="contact">
+            <h4>联系我</h4>
+            <p>邮箱：<a href="mailto:465833232@qq.com">465833232@qq.com</a></p>
+        </section>
     </main>
+
     <footer>
-        <p>© 2024 文生图展示 - 使用AI技术完成创作</p>
+        <h5>版权所有 © 2024 古道木羽个人博客</h5>
+        <h6>最后更新于 2024-12-07</h6>
     </footer>
 </body>
 </html>
