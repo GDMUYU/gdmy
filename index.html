@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="description" content="古道木羽的个人博客，分享生活点滴、学术与新闻传播前沿关注以及实践经历。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="传播学, 博客, 数据新闻, 数字媒体, AI新闻, 个人经历, 美食旅行">
-    <title>综合展示页面 - 古道木羽的个人博客</title>
+    <title>古道木羽的个人博客</title>
+    <!-- 引入Google字体 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -45,9 +45,6 @@
         nav {
             background: #fff;
             box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         nav h3 {
@@ -82,12 +79,11 @@
         }
 
         main {
-            max-width: 900px;
+            max-width: 800px;
             margin: 40px auto;
             background: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding: 20px;
-            border-radius: 8px;
         }
 
         section {
@@ -100,16 +96,48 @@
             padding-bottom: 10px;
         }
 
-        img, video {
+        dl dt {
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        dl dd {
+            margin: 0 0 10px 0;
+        }
+
+        p mark {
+            background: #ffe9a3;
+            padding: 0 3px;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        img {
             max-width: 100%;
             display: block;
-            margin: 20px auto;
+            margin: 20px 0;
             border-radius: 5px;
         }
 
-        .highlight {
-            color: #007BFF;
-            font-weight: bold;
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9比例 */
+            height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            border: none;
         }
 
         footer {
@@ -128,13 +156,33 @@
             margin: 0;
             font-weight: 400;
         }
+
+        .resume-subtitle {
+            font-weight: bold;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .resume-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .resume-list li {
+            margin-bottom: 10px;
+        }
+
+        .resume-list li strong {
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>综合展示页面 - 古道木羽的个人博客</h1>
-        <h2>学术与创意的碰撞</h2>
-        <p>欢迎来到我的个人博客，分享生活点滴与创意实践。</p>
+        <h1>古道木羽的个人博客</h1>
+        <h2>在这里分享我的生活与学术探索</h2>
+        <p>欢迎来到我的个人博客！这里记录了我在日常生活中的有趣见闻、<mark>传播学前沿关注</mark>以及一些有价值的资源分享。</p>
     </header>
 
     <nav>
@@ -143,55 +191,134 @@
             <li><a href="#about">关于我</a></li>
             <li><a href="#life">生活点滴</a></li>
             <li><a href="#experience">个人经历</a></li>
-            <li><a href="#idiom">成语图展示</a></li>
-            <li><a href="#animation">成语动画展示</a></li>
+            <li><a href="#frontier">前沿关注</a></li>
             <li><a href="#contact">联系我</a></li>
         </ul>
     </nav>
 
     <main>
+        <!-- 在 main 的开头加入一张公共图片 -->
+        <img src="https://images.unsplash.com/photo-1528459066378-1b97b1c07fa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc2MjR8MHwxfHNlYXJjaHwyfHxjb2RpbmclMkN0ZWNofGVufDB8fHx8MTYxOTg5ODEyMw&ixlib=rb-4.0.3&q=80&w=1080" alt="编程与技术主题图片">
+
         <section id="about">
             <h4>关于我</h4>
-            <p>我是中国传媒大学传播学方向的在读学生，关注<mark>新闻传播与数字媒体</mark>的结合。</p>
+            <p>我是中国传媒大学一名传播学方向的在读学生，对新闻传播领域的前沿议题、数字媒体以及人工智能与新闻的融合有着浓厚的兴趣。同时，我也热爱美食、旅行和读书。</p>
+            <p>以下是我的一些基本信息：</p>
+            <dl>
+                <dt>姓名</dt>
+                <dd>古道木羽</dd>
+                <dt>职业</dt>
+                <dd>学生</dd>
+                <dt>兴趣爱好</dt>
+                <dd>传播学、数字媒体、舆情分析、美食、旅行</dd>
+            </dl>
+            <p>我的名字用<ruby>古<rt>gǔ</rt>道<rt>dào</rt>木<rt>mù</rt>羽<rt>yǔ</rt></ruby>这几个汉字在国际化场景中或许并不多见。<br>作为传播学专业的学生，我喜欢在学习过程中融入<em>细节提示</em>和技术工具，比如使用<abbr title="超文本标记语言">HTML</abbr>和<abbr title="层叠样式表">CSS</abbr>在校内项目中提升页面呈现效果。</p>
         </section>
 
         <section id="life">
             <h4>生活点滴</h4>
-            <p>每天坚持学习与记录。</p>
+            <p>下面是我日常的一些小习惯：</p>
+            <ol>
+                <li>每日晨跑 30 分钟</li>
+                <li>写日记并记录<mark>灵感</mark>和想法</li>
+                <li>品尝不同地区的美食</li>
+            </ol>
+            <p>我还喜欢在休闲时看看美图：</p>
+            <img src="https://images.unsplash.com/photo-1501425359014-24446a6e42c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc2MjR8MHwxfHNlYXJjaHwzfHxmYXNoaW9ufGVufDB8fHx8MTYxOTg5ODE2Mw&ixlib=rb-4.0.3&q=80&w=1080" alt="生活中的一张风景照片">
+            <!-- 使用您提供的新URL的风景图片 -->
+            <img src="https://pic.netbian.com/uploads/allimg/241112/234250-1731426170ef0d.jpg" alt="在山的那边4K风景壁纸3840x2160" title="在山的那边4K风景壁纸3840x2160">
         </section>
 
         <section id="experience">
             <h4>个人经历</h4>
-            <ul>
-                <li>传播学学习与应用</li>
-                <li>数据新闻探索</li>
+            <p>以下是我部分教育、校园与实习经历的整理：</p>
+
+            <h5 class="resume-subtitle">教育经历</h5>
+            <ul class="resume-list">
+                <li><strong>2022.9 - 至今</strong> 中国传媒大学 （传播学 舆情分析方向，数字新闻与社会创新微专业）</li>
+                <li>主修课程：传播学概论、新闻采访与写作、全媒体编辑、网络舆情理论与实践、Python计算思维等，均分达92分。</li>
+            </ul>
+
+            <h5 class="resume-subtitle">校园经历</h5>
+            <ul class="resume-list">
+                <li><strong>2022.9-2023.9</strong> 新闻学院学生会媒体部：原创文章撰写、晚会影像拍摄、公众号运营（阅读量达12000+）</li>
+                <li><strong>2022.9-2023.9</strong> 志愿者联合会品牌宣传部：志愿活动影像处理、公众号内容排版运营</li>
+            </ul>
+
+            <h5 class="resume-subtitle">实习经历</h5>
+            <ul class="resume-list">
+                <li><strong>2023.5-2024.5 凤凰网广告部-项目管理实习生：</strong>采访提纲拟定、新闻稿撰写（累计120万+曝光量）、视频策划与剪辑、项目执行统筹（香港贸发局等21个项目）</li>
+                <li><strong>2024.5-2024.11 字节跳动-懂车帝-广告媒介实习生：</strong>广告投放、数据分析与投放优化（ctr由0.3%提升至3%+）、工作流程提效</li>
+            </ul>
+
+            <h5 class="resume-subtitle">实践经历</h5>
+            <ul class="resume-list">
+                <li>新闻采访实践：撰写人物稿件，如“当我放弃做节目主持人，选择做一名北大的保安”</li>
+                <li>子牛杯社会调查大赛优秀奖：实地调研并撰写17000+字调查报告</li>
+                <li>大广赛校优秀奖：参与广告短片的脚本撰写、分镜绘制、视频剪辑</li>
+                <li>“京彩大创”创新创业大赛校一等奖、挑战杯专项赛银奖：乡村少数民族青少年音乐教育扶持计划市场策略制定</li>
+                <li>创业项目抖音账号运营：“优动乒乓俱乐部”账号运营、策划视频选题，粉丝增长1w+</li>
             </ul>
         </section>
 
-        <section id="idiom">
-            <h4>成语图展示</h4>
-            <p>成语：<strong class="highlight">多劳多得</strong></p>
-            <p>解释：<mark>更多的光顾麦当劳就会收获更多的麦乐鸡块。</mark></p>
+        <section id="frontier">
+            <h4>前沿关注</h4>
+            <p>作为传播学专业的学生，我对新闻传播领域的前沿趋势尤其关注。当前，我特别重视以下方向：</p>
+            <ul>
+                <li><strong>数据新闻与算法推荐：</strong>探索新闻在大数据时代的精准分发与个性化推荐机制。</li>
+                <li><strong>人工智能与新闻生产：</strong>关注 AI 技术在新闻内容生成、舆情监测、虚假信息识别中的应用。</li>
+                <li><strong>沉浸式报道与新媒体形态：</strong>研究 VR/AR、互动叙事形式在新闻传播中的实践，为受众带来更深层次的体验。</li>
+            </ul>
+            <p>我也会在 B 站上分享一些与新闻传播、数据媒体与AI相关的学习与实践经验。以下是我最新上传的视频：</p>
+            <div class="video-container">
+                <iframe src="https://player.bilibili.com/player.html?bvid=BV1XK411r7Q7&high_quality=1&danmaku=0" allowfullscreen="true"></iframe>
+            </div>
+                    <section id="idiom">
+            <h1>任务二：成语图展示</h1>
+            <h2>成语：多劳多得</h2>
+            <p>拼音：<ruby>多劳多得<rt>duō láo duō dé</rt></ruby></p>
+            <h4>生成过程</h4>
+            <ul>
+                <li>选择成语“多劳多得”，寓意为“付出越多，收获越多”。</li>
+                <li>将成语故事具体化为一个生活化场景。</li>
+                <li>使用 AI 工具生成图像，表现主题。</li>
+                <li>优化成语画面细节，最终生成以下图片：</li>
+            </ul>
             <img src="image.png" alt="多劳多得成语展示">
         </section>
 
         <section id="animation">
-            <h4>成语动画展示</h4>
-            <p>多劳多得动态展示：一个小男孩拿着麦乐鸡块在麦当劳店铺前走路，手中的麦乐鸡块不断增加。</p>
+            <h1>任务三：成语动画展示</h1>
+            <h2>动态演示：多劳多得</h2>
+            <p>多劳多得动画展示：一个小男孩拿着麦乐鸡块在麦当劳店铺前走路，手中的麦乐鸡块不断增加。</p>
+            <h4>关键帧描述</h4>
+            <ul>
+                <li><strong>第一帧：</strong>小男孩站在麦当劳店铺前，手中只有少量麦乐鸡块。</li>
+                <li><strong>第二帧：</strong>小男孩迈步走向另一家麦当劳。</li>
+                <li><strong>第三帧：</strong>小男孩走到新的麦当劳店前，手中的麦乐鸡块增多。</li>
+                <li><strong>第四帧：</strong>小男孩继续前进，麦乐鸡块再次增加，表情更加开心。</li>
+                <li><strong>第五帧：</strong>小男孩双手捧满麦乐鸡块，身后麦当劳的门店排成一排。</li>
+            </ul>
             <video controls>
                 <source src="video.mp4" type="video/mp4">
                 您的浏览器不支持视频播放。
             </video>
         </section>
+        </section>
 
         <section id="contact">
             <h4>联系我</h4>
-            <p>邮箱：<a href="mailto:465833232@qq.com">465833232@qq.com</a></p>
+            <p>如果你有任何问题或建议，欢迎随时通过以下方式联系我：</p>
+            <ul>
+                <li>Email：<b>465833232@qq.com</b></li>
+                <li>B站主页：<a href="https://space.bilibili.com/10753463" target="_blank">我的B站主页</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <h5>版权所有 © 2024 古道木羽个人博客</h5>
+        <h5>页脚信息</h5>
+        <p>版权所有 © 2024 古道木羽个人博客</p>
         <h6>最后更新于 2024-12-07</h6>
     </footer>
 </body>
